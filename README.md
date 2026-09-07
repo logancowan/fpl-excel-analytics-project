@@ -88,3 +88,7 @@ Historical relationships may also not continue into future seasons.
 - Further squad optimisation
 - Automated data updates
 - Live-season model evaluation
+
+## Excel Model Preview
+
+![FPL Player Analysis](Screenshots/player-analysis.png)
