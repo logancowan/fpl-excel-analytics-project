@@ -1,94 +1,120 @@
 # Fantasy Premier League Analytics & Squad Optimisation
 
-An analytical Fantasy Premier League project developed using Excel and Power BI to analyse player performance, fixture difficulty, expected points and squad selection.
+An analytical Fantasy Premier League project developed using Excel and Power BI to evaluate player performance, fixture difficulty, expected points, player value and squad selection.
 
 ## Project Overview
 
-This project uses historical and current Fantasy Premier League data to analyse player performance, team strength and fixture difficulty.
+This project develops a data-driven FPL analytics model designed to support player evaluation and squad selection.
 
-The aim is to develop a model that can estimate expected player performance and support FPL squad selection.
+The project combines:
 
-The model was developed in Microsoft Excel, with Power BI used to create an interactive dashboard for presenting the analysis.
+- Statistical modelling
+- Player performance analysis
+- Fixture analysis
+- Value analysis
+- Squad optimisation
+- Interactive Power BI visualisation
 
-## Objectives
+The Excel model acts as the analytical and optimisation engine, while Power BI provides an interactive decision-support interface.
 
-- Analyse historical FPL player performance
-- Estimate expected player points
-- Evaluate player value relative to price
-- Analyse fixture difficulty
-- Analyse team attacking and defensive performance
-- Support FPL squad selection
-- Present analytical findings using Power BI
+---
+
+## Dashboard
+
+### FPL Overview
+
+![FPL Overview](Screenshots/overview.png)
+
+The overview dashboard provides a high-level view of player performance and model outputs, including:
+
+- Top goal scorers
+- Top assist providers
+- Player rankings
+- Price vs model expected points
+- Player value
+
+### Player Analysis
+
+![Player Analysis](Screenshots/player-analysis-powerbi.png)
+
+The Player Analysis page allows individual players to be investigated using:
+
+- Model expected points
+- Price
+- Points per 90
+- Minutes
+- Expected points per £m
+- Fixture outlook
+- Player model ranking
+
+### Squad Optimisation
+
+![Squad Optimisation](Screenshots/squad-optimisation-powerbi.png)
+
+The Squad Optimisation page presents the model-selected 15-player squad and evaluates:
+
+- Squad cost
+- Remaining budget
+- Expected points
+- Squad size
+- Squad composition
+- Expected points by position
+
+---
+
+## Methodology
+
+The model evaluates players using a combination of historical performance, underlying attacking and defensive metrics, player value, starting probability, reliability and fixture difficulty.
+
+Key metrics include:
+
+- Points per 90
+- xG per 90
+- xA per 90
+- xGI per 90
+- Points per £m
+- xGI per £m
+- Starting probability
+- Defensive contribution potential
+- Bonus potential
+- Fixture-adjusted performance
+
+Fixture modelling incorporates team and opponent strength alongside expected goals and home/away status.
+
+The resulting player scores are used to support squad optimisation subject to FPL squad constraints.
+
+More detail is available in [`Documentation/methodology.md`](Documentation/readme.md).
+
+---
 
 ## Tools
 
 - Microsoft Excel
-- Power BI
+- Microsoft Power BI
 - Statistical modelling
 - Data analysis
 - Data visualisation
+- Sports analytics
 
-## Model Structure
+---
 
-The project consists of several analytical components:
+## Project Structure
 
-- Player analysis
-- Player performance modelling
-- Fixture analysis
-- Team analysis
-- Team fixtures
-- Squad selection
-
-## Data Pipeline
-
-Raw FPL Data  
-↓  
-Data Cleaning  
-↓  
-Player Analysis  
-↓  
-Team Analysis  
-↓  
-Fixture Analysis  
-↓  
-Expected Points Model  
-↓  
-Squad Selection  
-↓  
-Power BI Dashboard
-
-## Model Validation
-
-Historical backtesting is planned using previous FPL seasons to compare predicted player performance against actual results.
-
-The model is therefore currently presented as an analytical and predictive model under development rather than as a guaranteed forecasting system.
-
-## Dashboard
-
-An interactive Power BI dashboard is being developed to present:
-
-- Player rankings
-- Expected points
-- Player value
-- Fixture difficulty
-- Team performance
-- Squad recommendations
-
-## Limitations
-
-The model cannot perfectly predict future FPL performance. Player availability, expected minutes, fixture difficulty and future performance are all subject to uncertainty.
-
-Historical relationships may also not continue into future seasons.
-
-## Future Improvements
-
-- Historical out-of-sample backtesting
-- Comparison against baseline forecasting methods
-- Improved expected-minutes modelling
-- Further squad optimisation
-- Automated data updates
-- Live-season model evaluation
-
-## Excel Model Preview
-
-![FPL Player Analysis](Screenshots/player-analysis.png)
+```text
+fpl-excel-analytics-project/
+│
+├── Excel/
+│   └── FPL_Analytics_Model.xlsx
+│
+├── PowerBI/
+│   └── FPL_Analytics_Dashboard.pbix
+│
+├── Screenshots/
+│   ├── overview.png
+│   ├── player-analysis.png
+│   └── squad-optimisation.png
+│
+├── Documentation/
+│   └── methodology.md
+│
+└── README.md
