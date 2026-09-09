@@ -83,7 +83,7 @@ Fixture modelling incorporates team and opponent strength alongside expected goa
 
 The resulting player scores are used to support squad optimisation subject to FPL squad constraints.
 
-More detail is available in [`Documentation/methodology.md`](Documentation/readme.md).
+More detail is available in the documentation readme.
 
 ---
 
