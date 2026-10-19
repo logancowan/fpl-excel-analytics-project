@@ -23,7 +23,7 @@ The Excel model acts as the analytical and optimisation engine, while Power BI p
 
 ### FPL Overview
 
-![FPL Overview](Screenshots/overview.png)
+
 
 The overview dashboard provides a high-level view of player performance and model outputs, including:
 
